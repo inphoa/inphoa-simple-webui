@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Addition</title>
+</head>
+<body>
+    <h2>Addiere zwei Zahlen</h2>
+    <form method="post">
+        <input type="number" name="num1" required>
+        <input type="number" name="num2" required>
+        <button type="submit">Addieren</button>
+    </form>
+    {% if result is not none %}
+    <h3>Ergebnis: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
